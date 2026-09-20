@@ -1,4 +1,4 @@
 export interface SectionHeader {
   title: string;
-  description: string;
+  subtitle?: string;
 }

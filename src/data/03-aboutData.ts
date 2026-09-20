@@ -9,6 +9,7 @@ interface StatItem {
 
 interface AboutSectionData {
   header: SectionHeader;
+  description: string;
   image: {
     srcImg: string;
     altText: string;
@@ -19,9 +20,9 @@ interface AboutSectionData {
 export const aboutData: AboutSectionData = {
   header: {
     title: 'Proven Results, Measurable Impact',
-    description:
-      'We are a team of tech enthusiasts dedicated to building innovative and scalable IT solutions. From software development to cloud integration, we help businesses thrive in the digital era.',
   },
+  description:
+    'We are a team of tech enthusiasts dedicated to building innovative and scalable IT solutions. From software development to cloud integration, we help businesses thrive in the digital era.',
   image: {
     srcImg: aboutTeamImg,
     altText: 'Team of tech enthusiasts working in an office',
