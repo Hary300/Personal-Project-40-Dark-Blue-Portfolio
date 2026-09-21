@@ -1,5 +1,5 @@
 import logo from '@/assets/icons/logo.svg';
-type NavId = 'about' | 'service' | 'projects' | 'testimonials' | 'faq';
+export type NavId = 'about' | 'service' | 'projects' | 'testimonials' | 'faq';
 type NavLabel = 'About' | 'Service' | 'Projects' | 'Testimonials' | 'FAQ';
 type NavHref = '#about' | '#service' | '#projects' | '#testimonials' | '#faq';
 
@@ -10,13 +10,14 @@ interface NavItem {
 }
 
 interface CtaButton {
-  id: 'get-started';
-  label: 'Get Started';
+  id: string;
+  label: string;
   href: '#contact';
 }
 
 interface Logo {
-  text: 'Your Logo';
+  text: string;
+  href: '#home';
   alt: string;
   src: string;
 }
@@ -30,6 +31,7 @@ interface HeaderData {
 export const headerData: HeaderData = {
   logo: {
     text: 'Your Logo',
+    href: '#home',
     alt: 'Your Logo Icon',
     src: logo,
   },

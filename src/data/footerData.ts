@@ -14,20 +14,11 @@ interface SocialItem {
 }
 
 interface FooterData {
-  logo: {
-    text: string;
-    srcImg?: string;
-    altText: string;
-  };
   copyright: string;
   socials: SocialItem[];
 }
 
 export const footerData: FooterData = {
-  logo: {
-    text: 'Your Logo',
-    altText: 'Your Logo Icon',
-  },
   copyright:
     'Another masterpiece by Hary, trained at WebProgrammingHack bootcamp',
   socials: [

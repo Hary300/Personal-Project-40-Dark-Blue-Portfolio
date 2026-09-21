@@ -1,1 +1,1 @@
-export { default } from './TestimonilasSection';
+export { default } from './TestimonialsSection';
