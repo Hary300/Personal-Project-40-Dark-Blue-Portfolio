@@ -24,7 +24,7 @@ interface Logo {
 
 interface HeaderData {
   logo: Logo;
-  navList: NavItem[];
+  navLinks: NavItem[];
   ctaButton: CtaButton;
 }
 
@@ -35,7 +35,7 @@ export const headerData: HeaderData = {
     alt: 'Your Logo Icon',
     src: logo,
   },
-  navList: [
+  navLinks: [
     { id: 'about', label: 'About', href: '#about' },
     { id: 'service', label: 'Service', href: '#service' },
     { id: 'projects', label: 'Projects', href: '#projects' },
