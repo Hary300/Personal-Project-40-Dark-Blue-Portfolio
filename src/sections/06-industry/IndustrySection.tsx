@@ -13,10 +13,10 @@ const IndustrySection = () => {
       <Tabs defaultValue={tabs[0].id} className='flex flex-col gap-6 lg:gap-17'>
         <TabsList
           variant='line'
-          className='flex justify-between w-full overflow-auto gap-2 '
+          className='flex justify-between w-full overflow-auto gap-2 border-b'
         >
           {tabs.map((tab) => (
-            <TabsTrigger key={tab.id} value={tab.id}>
+            <TabsTrigger key={tab.id} value={tab.id} className='pb-4'>
               {tab.trigger}
             </TabsTrigger>
           ))}

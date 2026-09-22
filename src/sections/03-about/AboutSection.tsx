@@ -10,9 +10,9 @@ const AboutSection = () => {
   return (
     <SectionWrapper
       sectionId='about'
-      className='flex flex-col gap-6 md:flex-row md:gap-12 pt-5 pb-10 lg:py-20 md:items-center'
+      className='flex flex-col gap-6 md:flex-row md:gap-12 pt-5 pb-10 lg:py-20 items-center'
     >
-      <div className='rounded-2xl overflow-hidden'>
+      <div className='rounded-2xl overflow-hidden max-w-110.5'>
         <img
           src={aboutImg.srcImg}
           alt={aboutImg.altText}
