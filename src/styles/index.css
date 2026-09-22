@@ -207,7 +207,7 @@
 }
 
 :root {
-  --background: #0c0d0d;
+  --background: #000000;
   --foreground: #fdfdfd;
   --border: #181d27;
   --card: oklch(1 0 0);

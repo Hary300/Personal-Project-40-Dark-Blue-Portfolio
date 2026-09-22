@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <SectionWrapper
       sectionId='home'
-      className='flex flex-wrap pt-28 lg:pt-36.75 items-center gap-7 lg:gap-10'
+      className='relative flex flex-wrap pt-28 lg:pt-36.75 items-center gap-7 lg:gap-10'
     >
       <div className='flex-[5.3] basis-80 flex flex-col gap-6 lg:gap-12 '>
         <div className='flex flex-col gap-3'>
@@ -66,6 +66,7 @@ const HeroSection = () => {
           );
         })}
       </div>
+      <div className='absolute inset-x-0 bottom-0 h-65 bg-linear-to-t from-black to-transparent from-10% ' />
     </SectionWrapper>
   );
 };

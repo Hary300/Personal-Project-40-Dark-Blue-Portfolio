@@ -2,7 +2,7 @@ import type { NavId } from '@/data/headerData';
 import { cn } from 'cn';
 import type { ReactNode } from 'react';
 
-type SectionId = NavId | 'home' | 'contact';
+type SectionId = NavId | 'home' | 'contact' | 'trusted';
 
 interface SectionWrapperProps {
   sectionId: SectionId;
