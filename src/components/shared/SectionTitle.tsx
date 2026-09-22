@@ -25,7 +25,7 @@ const SectionTitle = ({
         {title}
       </h2>
       {(subtitle || description) && (
-        <p className='text-neutral-400 text-sm lg:text-md'>
+        <p className='text-neutral-400 text-sm lg:text-md max-w-226.75 mx-auto'>
           {subtitle || description}
         </p>
       )}
