@@ -6,7 +6,7 @@ import { trustedData } from '@/data/02-trustedData';
 const TrustedSection = () => {
   const title = trustedData.title;
   return (
-    <SectionWrapper sectionId='trusted' hasPy className='py-7'>
+    <SectionWrapper sectionId='trusted' hasPy className='pt-7 pb-0 lg:pb-0'>
       <SectionTitle
         title={title}
         titleClassName='text-md lg:text-xl font-semibold'

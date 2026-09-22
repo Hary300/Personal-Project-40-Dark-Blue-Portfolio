@@ -12,7 +12,7 @@ export default function TrustedMarque() {
             <img
               src={company.srcImg}
               alt={company.altText}
-              className='mr-8 h-12 dark:hidden grayscale'
+              className='mr-8 h-12 grayscale hover:grayscale-0'
             />
           </div>
         ))}
