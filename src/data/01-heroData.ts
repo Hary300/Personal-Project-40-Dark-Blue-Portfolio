@@ -1,6 +1,6 @@
 import { BsFillLightningChargeFill } from 'react-icons/bs';
 import { HiChartBar } from 'react-icons/hi2';
-import { LuBrain } from 'react-icons/lu';
+import { RiBrainFill } from 'react-icons/ri';
 import type { IconType } from 'react-icons/lib';
 import heroImg from '@/assets/images/HeroImg.png';
 
@@ -11,6 +11,7 @@ interface FeatureCard {
   id: CardId;
   title: CardTitle;
   description: string;
+  position: string;
   icon: IconType;
 }
 
@@ -59,19 +60,22 @@ export const heroData: HeroData = {
       id: 'elite-solutions',
       title: 'Elite Solutions',
       description: 'Cutting-edge tech, flawless execution',
+      position: 'top-[10%] right-1/2 -translate-x-[6.25%]',
       icon: BsFillLightningChargeFill,
     },
     {
       id: 'real-impact',
       title: 'Real Impact',
       description: 'We turn ideas into measurable success',
+      position: 'top-[50%] right-1/2 -translate-x-[48%]',
       icon: HiChartBar,
     },
     {
       id: 'smart-tech',
       title: 'Smart Tech',
       description: 'Innovation that drives real growth.',
-      icon: LuBrain,
+      position: 'top-[44%] left-1/2 translate-x-[37.5%]',
+      icon: RiBrainFill,
     },
   ],
 };
