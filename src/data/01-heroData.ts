@@ -20,12 +20,14 @@ interface HeroImg {
 }
 
 interface HeroData {
-  title: {
-    prefix: string;
-    highlight: string;
-    suffix: string;
+  text: {
+    title: {
+      prefix: string;
+      highlight: string;
+      suffix: string;
+    };
+    description: string;
   };
-  description: string;
   heroImg: HeroImg;
   ctaButton: {
     label: 'Get Started';
@@ -35,13 +37,15 @@ interface HeroData {
 }
 
 export const heroData: HeroData = {
-  title: {
-    prefix: 'Your Trusted IT ',
-    highlight: 'Partner for Digital ',
-    suffix: 'Success',
+  text: {
+    title: {
+      prefix: 'Your Trusted IT ',
+      highlight: 'Partner for Digital ',
+      suffix: 'Success',
+    },
+    description:
+      'We craft custom IT solutions that align with your goals, ensuring efficiency, security, and innovation',
   },
-  description:
-    'We craft custom IT solutions that align with your goals, ensuring efficiency, security, and innovation',
   ctaButton: {
     label: 'Get Started',
     href: '#contact',

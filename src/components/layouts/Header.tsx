@@ -2,12 +2,32 @@ import { headerData } from '@/data/headerData';
 import Logo from '../shared/Logo';
 import { Button } from '../ui/button';
 import MobileNav from '../shared/MobileNav';
+import { useEffect, useState } from 'react';
+import { cn } from 'cn';
 
 const Header = () => {
+  const [isScroll, setIsScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScroll(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const navLinks = headerData.navLinks;
   const ctaButton = headerData.ctaButton;
   return (
-    <header className='flex justify-between items-center px-4 sm:px-10 lg:px-15 xl:px-30 h-16'>
+    <header
+      className={cn(
+        'fixed max-w-360 mx-auto w-full flex justify-between items-center px-4 sm:px-10 lg:px-15 xl:px-30 h-16 z-50',
+        isScroll && 'backdrop-blur-2xl'
+      )}
+    >
       <Logo />
       <MobileNav />
       <nav className='hidden lg:block'>
