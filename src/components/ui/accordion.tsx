@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { cn } from 'cn';
 import { Accordion as AccordionPrimitive } from 'radix-ui';
-import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
 import { FiMinus, FiPlus } from 'react-icons/fi';
 
 function Accordion({

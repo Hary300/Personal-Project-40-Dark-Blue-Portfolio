@@ -37,6 +37,8 @@ const HeroSection = () => {
           <img
             src={heroImg.srcImg}
             alt={heroImg.altText}
+            loading='eager'
+            fetchPriority='high'
             className='object-contain'
           />
         </SkewMotion>
