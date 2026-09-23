@@ -21,7 +21,7 @@ const IndustrySection = () => {
             </TabsTrigger>
           ))}
         </TabsList>
-        <div className='lg:px-28.5'>
+        <div className='xl:px-28.5'>
           {tabs.map((tab) => (
             <TabsContent key={tab.id} value={tab.id}>
               <div className='flex flex-col gap-5 lg:gap-25 sm:flex-row sm:justify-between sm:items-center'>

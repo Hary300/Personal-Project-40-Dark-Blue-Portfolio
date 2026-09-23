@@ -1,10 +1,10 @@
 import type { SectionHeader } from '@/types/SectionHeader';
 
-type FieldLabel = 'Name' | 'Email' | 'Message';
 type FieldName = 'name' | 'email' | 'message';
-type FieldType = 'text' | 'email' | 'textarea';
+export type FieldLabel = 'Name' | 'Email' | 'Message';
+export type FieldType = 'text' | 'email' | 'textarea';
 
-interface FormInputItem {
+interface FormFieldItem {
   id: string;
   label: FieldLabel;
   name: FieldName;
@@ -20,7 +20,7 @@ interface ServiceOptionItem {
 
 interface ContactSectionData {
   header: SectionHeader;
-  inputs: FormInputItem[];
+  fields: FormFieldItem[];
   servicesLabel: string;
   services: ServiceOptionItem[];
   submitButtonText: string;
@@ -32,7 +32,7 @@ export const contactData: ContactSectionData = {
     subtitle:
       'Have a project in mind? Fill out the form below, and our team will get back to you shortly',
   },
-  inputs: [
+  fields: [
     {
       id: 'name',
       label: 'Name',
