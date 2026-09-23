@@ -34,9 +34,9 @@ const IndustrySection = () => {
                       {tab.description}
                     </p>
                   </div>
-                  <Button className='max-w-49.25'>Detail</Button>
+                  <Button className='sm:max-w-49.25'>Detail</Button>
                 </div>
-                <div className='overflow-hidden rounded-2xl w-full max-w-90'>
+                <div className='overflow-hidden rounded-2xl w-full sm:max-w-90'>
                   <img
                     src={tab.srcImg}
                     alt={tab.altText}
