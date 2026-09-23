@@ -16,14 +16,17 @@ const MobileNav = () => {
     <div className='lg:hidden flex items-center'>
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant='ghost' className='px-0 h-auto rounded-0'>
+          <Button
+            variant='ghost'
+            className='px-0 h-auto rounded-0 hover:bg-transparent'
+          >
             <FiMenu className='size-6' />
           </Button>
         </SheetTrigger>
         <SheetContent showCloseButton={false}>
-          <div className='flex flex-col gap-3 p-4'>
+          <div className='flex flex-col gap-3 p-4 sm:px-10'>
             <SheetClose asChild>
-              <div className='flex justify-end'>
+              <div className='flex justify-end cursor-pointer'>
                 <RxCross2 className='size-6' />
               </div>
             </SheetClose>

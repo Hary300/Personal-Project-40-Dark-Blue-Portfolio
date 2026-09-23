@@ -70,7 +70,10 @@ const ContactForm = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
             {services.map((service) => (
-              <div key={service.id} className='flex items-center gap-4'>
+              <div
+                key={service.id}
+                className='flex items-center gap-4 cursor-pointer'
+              >
                 <div className='relative flex items-center'>
                   <input
                     type='checkbox'
@@ -81,7 +84,9 @@ const ContactForm = () => {
                   />
                   <FaCheck className='size-2.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 opacity-0 peer-checked:opacity-100 text-neutral-25' />
                 </div>
-                <label htmlFor={service.id}>{service.label}</label>
+                <label htmlFor={service.id} className='cursor-pointer'>
+                  {service.label}
+                </label>
               </div>
             ))}
           </div>
